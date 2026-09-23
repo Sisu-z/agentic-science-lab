@@ -4,7 +4,7 @@
 
 ## 从这里开始
 
-1. 所有 Agent 先读 [AGENTS.md](AGENTS.md)。
+1. 所有 Agent 先读 [AGENTS.md](AGENTS.md)，并完整阅读[新手教程原文副本及其保存说明](docs/references/asc-beginner-guide/README.md)。
 2. 查看 [当前进度](docs/status.md)，选择题目并确认其规则与评分要求。
 3. 复制 [单题模板](templates/task/README.md) 到 `tasks/<challenge-id>/README.md`，在独立分支与工作目录中完成工作。
 4. 保存实际运行和验证证据，通过审查后合并；再决定是否提炼 Skill 或公共模块。
