@@ -16,4 +16,10 @@
 | Focused imaging and resolution characterisation from unfocused plane-wave recordings | 成像重建、数值计算与指标验证 | S4 Round 3；须达到实际分辨率要求；尚未运行 |
 | FIB Sim-to-Real：少样本参考数据分割挑战 | 视觉与模拟到真实域迁移实践 | 题面仍标注公开预览，自动评分适配未完成；尚未运行 |
 
-下一步：确认本轮计分范围，再选择第一道题，下载允许的资源并建立单题记录。
+## 正在进行
+
+已按维护者指示开始 [symbolic-regression 首次独立尝试](../tasks/terminal-bench-science-v0-1-0-symbolic-regression-3bceeb08/README.md)。仅由 Sisu Codex 执行，不使用子 Agent。
+
+当前阻塞：Playground 认证有效，但 Bohrium 尚未登录，Wenyon 训练数据下载返回 401。未训练、未提交、无得分。维护者完成官方登录后继续。
+
+已核对正式赛事页：计分题每周五发布，24 小时提交窗口；其他题目用于不限次练习，不计入赛季排名。本次按练习任务执行。
