@@ -2,7 +2,7 @@
 
 ## 开始工作
 
-- 参与 2026-10-10 追光者招募赛时，接着读取 [总监指挥入口](docs/contests/lightseeker-20261010/README.md)，按 GitHub Issue 的唯一当前运行执行；本届正式题面和通知优先于历史练习。
+- 参与 2026-10-10 追光者招募赛时，先读 [项目内可见对话成员入口](docs/contests/lightseeker-20261010/START_HERE.md) 和 [共享经验](docs/contests/lightseeker-20261010/EXPERIENCES.md)。本主对话仅统筹，具体题由用户在“全栈开发”项目创建的可见对话负责，不自动派内部子 Agent 替代。接着读取 [总监指挥入口](docs/contests/lightseeker-20261010/README.md)，按 GitHub Issue 的唯一当前运行执行；本届正式题面和通知优先于历史练习。
 
 - 先阅读 README.md，以及 docs/references/asc-beginner-guide/original.txt 的全部用户提供原文，再阅读同目录 README.md（完整性边界）和 agent-notes.md（项目提醒）；然后阅读 docs/status.md 和目标题目的 README.md。
 - 教程副本不得改写或混入项目解释。遇到图片占位、同步块及外链内容缺失时回源阅读，无法读取须说明，不声称零遗漏。
