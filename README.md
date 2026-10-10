@@ -4,7 +4,7 @@
 
 ## 从这里开始
 
-本次追光者招募赛的组织与派工入口见 [总监指挥入口](docs/contests/lightseeker-20261010/README.md)。正式题与个人材料保存在受控位置；本仓库只公开必要组织文档。
+本次追光者招募赛的新成员先读 [项目内题目对话入口](docs/contests/lightseeker-20261010/START_HERE.md)，共享经验见 [经验索引](docs/contests/lightseeker-20261010/EXPERIENCES.md)。组织与派工入口见 [总监指挥入口](docs/contests/lightseeker-20261010/README.md)。正式题与个人材料保存在受控位置；本仓库只公开必要组织文档。
 
 1. 所有 Agent 先读 [AGENTS.md](AGENTS.md)，并完整阅读[新手教程原文副本及其保存说明](docs/references/asc-beginner-guide/README.md)。
 2. 本次招募赛按[指挥入口](docs/contests/lightseeker-20261010/README.md)读取分配的 Issue、唯一运行和受控材料，不自行选题或认领。其他练习查看 [当前进度](docs/status.md)并确认规则。
