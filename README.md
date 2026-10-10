@@ -4,10 +4,12 @@
 
 ## 从这里开始
 
+本次追光者招募赛的组织与派工入口见 [总监指挥入口](docs/contests/lightseeker-20261010/README.md)。正式题与个人材料保存在受控位置；本仓库只公开必要组织文档。
+
 1. 所有 Agent 先读 [AGENTS.md](AGENTS.md)，并完整阅读[新手教程原文副本及其保存说明](docs/references/asc-beginner-guide/README.md)。
-2. 查看 [当前进度](docs/status.md)，选择题目并确认其规则与评分要求。
-3. 复制 [单题模板](templates/task/README.md) 到 `tasks/<challenge-id>/README.md`，在独立分支与工作目录中完成工作。
-4. 保存实际运行和验证证据，通过审查后合并；再决定是否提炼 Skill 或公共模块。
+2. 本次招募赛按[指挥入口](docs/contests/lightseeker-20261010/README.md)读取分配的 Issue、唯一运行和受控材料，不自行选题或认领。其他练习查看 [当前进度](docs/status.md)并确认规则。
+3. 仅对获准公开的练习，复制 [单题模板](templates/task/README.md) 到 `tasks/<challenge-id>/README.md`，在独立分支与工作目录中完成工作；招募赛题目默认在仓库外受控目录执行。
+4. 保存实际运行和验证证据。允许公开的改动通过审查后合并；赛题成果只交到规则与授权指定的位置，再决定是否可提炼公开资产。
 
 ## 资产布局
 
