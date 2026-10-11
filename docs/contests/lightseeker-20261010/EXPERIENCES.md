@@ -19,6 +19,7 @@
 | 独立可见对照与原生记录 | 先冻结版本、输入、标准和配对预算，独立对话不共享本题中间答案；结束后核各自完整原生终态、稳定源文件和哈希。自动背景与无法锁定的服务字段如实披露，不声称彻底关闭记忆 | [#28](https://github.com/Sisu-z/agentic-science-lab/issues/28)、[#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
 | 增益与能力分别验收 | 有 Skill 与基线可能同样正确，基线也可能更快；质量、耗时、复用和异常处理按事先标准分别判断。所有重试及作者投入计入，不把自评或结构通过当正式分数 | [#28](https://github.com/Sisu-z/agentic-science-lab/issues/28)、[#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
 | 原生工具事件计数 | 当前 Codex 原生导出使用 `custom_tool_call` 时，仅数旧 `function_call` 会漏记；先核真实事件类型和时间边界，不把旧计数器的零解释为没有工具执行 | [#28](https://github.com/Sisu-z/agentic-science-lab/issues/28)、[#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
+| 科学版本终态采集与真实复现 | 作者完成版本后结束，总监从完整稳定的连续原生记录外部封存，再恢复原作者提交；核调用结果、派发封装、文件因果链与实际复算入口。运行中自采可能漏掉本次工具回执，补齐包装字段也不能证明评测失败根因；完整保留旧事实及独立性边界 | [历史独立审计](https://github.com/Sisu-z/agentic-science-lab/issues/17#issuecomment-6107496898)、[平台操作](PLATFORM.md#已完成版本的原生记录与复现) |
 | 引用检查器的授权范围 | 路径检查须覆盖任务明确授权的共享来源；检查器单一根目录造成的误报不能算作输出错误。保留原误报并用准确允许清单复核；路径、原文和哈希匹配仍不等于语义支持 | [#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
 
 ## 成员怎样贡献
