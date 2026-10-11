@@ -12,7 +12,12 @@
 | 输出与轨迹因果链 | 原生记录应实际覆盖生成命令、输入输出身份及验证，不仅保留事后文件名和进度说明；原始失败与调用结果配对保留，不补造历史 | [#13](https://github.com/Sisu-z/agentic-science-lab/issues/13) |
 | 正常提交与未知结果 | 先核已创建attempt、包哈希和接收再决定重试；排队占位零分不重交，按实质反馈修复，遵守实际限流。已用真实接收回执核查，后续终态只读原Issue | [#15](https://github.com/Sisu-z/agentic-science-lab/issues/15)、[#16](https://github.com/Sisu-z/agentic-science-lab/issues/16)、[#17](https://github.com/Sisu-z/agentic-science-lab/issues/17) |
 | 同分停滞与最佳版本 | 连续同分时先从原始模板/合同独立核实高权重要求；没有新差异证据不继续微调刷交。最新工程候选不自动取代最高正式版本 | [#14](https://github.com/Sisu-z/agentic-science-lab/issues/14) |
-| 优化累计预算 | 题定计算预算采用一次累计账本，实际尝试、失败和后续搜索计入，不因重启/反馈另获预算；验证与搜索边界按准确合同记录 | [#16](https://github.com/Sisu-z/agentic-science-lab/issues/16) |
+| 优化累计预算 | 合同未明确给出重置许可时，本轮保守采用一次累计账本，计入实际尝试、失败和后续搜索；这是本轮执行策略，不是已确认适用于所有题的统一官方规则。各题依准确合同记录验证与搜索边界 | [#16](https://github.com/Sisu-z/agentic-science-lab/issues/16) |
+| 评分元数据与实际终态 | `human_review_only` 也出现在本届已自动评分并得到有效终态的题目中，不能凭该字段断言新题不会自动出分；仍按实际 attempt 状态、回执和 final 标志核查 | [#4](https://github.com/Sisu-z/agentic-science-lab/issues/4#issuecomment-6105929911)、[#10](https://github.com/Sisu-z/agentic-science-lab/issues/10) |
+| 独立可见对照与原生记录 | 先冻结版本、输入、标准和配对预算，独立对话不共享本题中间答案；结束后核各自完整原生终态、稳定源文件和哈希。自动背景与无法锁定的服务字段如实披露，不声称彻底关闭记忆 | [#28](https://github.com/Sisu-z/agentic-science-lab/issues/28)、[#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
+| 增益与能力分别验收 | 有 Skill 与基线可能同样正确，基线也可能更快；质量、耗时、复用和异常处理按事先标准分别判断。所有重试及作者投入计入，不把自评或结构通过当正式分数 | [#28](https://github.com/Sisu-z/agentic-science-lab/issues/28)、[#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
+| 原生工具事件计数 | 当前 Codex 原生导出使用 `custom_tool_call` 时，仅数旧 `function_call` 会漏记；先核真实事件类型和时间边界，不把旧计数器的零解释为没有工具执行 | [#28](https://github.com/Sisu-z/agentic-science-lab/issues/28)、[#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
+| 引用检查器的授权范围 | 路径检查须覆盖任务明确授权的共享来源；检查器单一根目录造成的误报不能算作输出错误。保留原误报并用准确允许清单复核；路径、原文和哈希匹配仍不等于语义支持 | [#29](https://github.com/Sisu-z/agentic-science-lab/issues/29) |
 
 ## 成员怎样贡献
 
