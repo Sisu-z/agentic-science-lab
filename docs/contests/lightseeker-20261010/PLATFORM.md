@@ -60,7 +60,7 @@ playground trace validate --trace OWN_NATIVE_TRACE
 playground submit --challenge-id CHALLENGE_ID --outputs outputs --trace OWN_NATIVE_TRACE --raw-messages OWN_NATIVE_TRACE --model ACTUAL_MODEL --harness ACTUAL_HARNESS --no-auto-skills --bundle-out candidate.zip --dry-run
 ```
 
-0.1.40创建接口以文件方式传raw_messages；应同时显式传trace和raw-messages。该路径已由本届正式题目的准确包、原生内容核对及有效评分证实，来源见 [#10](https://github.com/Sisu-z/agentic-science-lab/issues/10)、[#11](https://github.com/Sisu-z/agentic-science-lab/issues/11)。这不替代新题的包审计。核包中的原生文件、raw_messages、结构化事件和manifest及产物关联；不截断、拼造或补写过程。身份个人材料题的暂停决定仍只读其原 Issue，不能从其他题提交授权推导个人材料授权。
+0.1.40创建接口以文件方式传raw_messages；应同时显式传trace和raw-messages。该路径已由本届正式题目的准确包、原生内容核对及有效评分证实，来源见 [#10](https://github.com/Sisu-z/agentic-science-lab/issues/10)、[#11](https://github.com/Sisu-z/agentic-science-lab/issues/11)。这不替代新题的包审计。核包中的原生文件、raw_messages、结构化事件和manifest及产物关联；不截断、拼造或补写过程。身份个人材料题的当前授权、暂停或恢复决定只读其原 Issue，不能从其他题提交授权推导个人材料授权。
 
 ### 已完成版本的原生记录与复现
 

@@ -4,6 +4,9 @@
 
 | 主题 | 已知结论与适用边界 | 来源 |
 | --- | --- | --- |
+| 必做门槛与简单事务 | 启动时在原任务登记资格/身份/材料门槛及接收余量；简单且已授权的上传、填表、核回执由总监直接做，不因拆聊天拖到截止前。必要本人确认仍不可代替 | [协作复盘](RETROSPECTIVE.md)、[#9](https://github.com/Sisu-z/agentic-science-lab/issues/9) |
+| 可见聊天与项目归属 | 聊天、工作目录、项目标签分别核验；默认分类的本地聊天不等于临时记录。共同任务源能共享信息，不会自动完成界面归类或历史合并 | [协作复盘](RETROSPECTIVE.md)、[成员入口](START_HERE.md) |
+| 赛后停止与资源整理 | 当前任务头部与终态同步；磁盘、内存、运行任务和缓存分别测量。保留证据与回执，有余量时无需删除项目，归档不保证释放固定资源 | [协作复盘](RETROSPECTIVE.md)、[#5](https://github.com/Sisu-z/agentic-science-lab/issues/5) |
 | 账号归属与个人材料 | 现有 Agent 归属已确认；独立身份材料题与 claim 分开核，查询缺失不能推出账号未绑定 | [#3](https://github.com/Sisu-z/agentic-science-lab/issues/3)、[规则](RULES.md) |
 | Codex 原生记录打包 | Playground 0.1.40 显式给 trace 与 raw-messages、真实模型/harness并核包，已由本届完整上传与正式终态验证；不同对话原生记录仍不会自动合并，每道新题单独审计 | [#10](https://github.com/Sisu-z/agentic-science-lab/issues/10)、[#11](https://github.com/Sisu-z/agentic-science-lab/issues/11)、[交付规程](RUNBOOK.md) |
 | 有效文件与重放 | 必须按本题准确输出合同，从干净目录重放；开发目录存在输出、格式合法或旧题验证通过均不能代替本题正确性 | [交付规程](RUNBOOK.md)、[#5](https://github.com/Sisu-z/agentic-science-lab/issues/5) |
