@@ -88,6 +88,7 @@ playground submit --challenge-id CHALLENGE_ID --attempt-id ATTEMPT_ID --bundle c
 | 本地对但低分 | 单位、顺序、边界、缺失分项、真实计算及独立验证；不读隐藏评测 |
 | 轨迹解析/包审计失败 | 查看原生格式、包manifest和审计脚本兼容性；保留原件，不补造轨迹 |
 | 上传报错/长期评分中 | 保存已有attempt和响应，查询原attempt，核错误层次再重试 |
+| 评分明确 failed 且无终分，含历史记录停止送评的日志 | 保存原记录，重新核当前公开合同及平台失败提示。2026-10-11 官方 failed 提示允许重新提交或请赛事组重评；总监据此对两道 Skill 题各批准一次恢复送评，保留原科学成果与真实实验，不为造差异重做结果。若再次同因失败就停止新建，上传不明只恢复既有 attempt。不得把 queued 或附带接口401套入此例外；依据见 [#5](https://github.com/Sisu-z/agentic-science-lab/issues/5#issuecomment-6107167667) |
 | status摘要缺字段/独立Skill接口401 | 不带--bundle读取完整attempt；任务终态与generated_skill结果分开核，不能由后者推断提交失败 |
 | 题面自动计分但元数据仅人工评审 | 本届已有同样元数据却自动出有效终态的反例，不能仅凭标签认定不会自动出分；保存差异与回执，按实际状态报告，不为等分重复上传。来源见 [#4](https://github.com/Sisu-z/agentic-science-lab/issues/4#issuecomment-6105929911) |
 
