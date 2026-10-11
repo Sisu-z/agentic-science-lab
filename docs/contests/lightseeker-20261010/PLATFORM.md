@@ -60,17 +60,22 @@ playground trace validate --trace OWN_NATIVE_TRACE
 playground submit --challenge-id CHALLENGE_ID --outputs outputs --trace OWN_NATIVE_TRACE --raw-messages OWN_NATIVE_TRACE --model ACTUAL_MODEL --harness ACTUAL_HARNESS --no-auto-skills --bundle-out candidate.zip --dry-run
 ```
 
-0.1.40创建接口以文件方式传raw_messages；Codex本机小样本实测应同时显式传trace和raw-messages。核包中的原生文件、raw_messages、结构化事件和manifest及产物关联；不截断、拼造或补写过程。小样本预检通过不等于本题完整包或平台评分通过。身份材料题目前仅有本地候选和dry-run，完整包审计未完成，不把它当正式链路成功案例。
+0.1.40创建接口以文件方式传raw_messages；应同时显式传trace和raw-messages。该路径已由本届正式题目的准确包、原生内容核对及有效评分证实，来源见 [#10](https://github.com/Sisu-z/agentic-science-lab/issues/10)、[#11](https://github.com/Sisu-z/agentic-science-lab/issues/11)。这不替代新题的包审计。核包中的原生文件、raw_messages、结构化事件和manifest及产物关联；不截断、拼造或补写过程。身份个人材料题的暂停决定仍只读其原 Issue，不能从其他题提交授权推导个人材料授权。
 
 正式提交必须经本题验收且在已有明确授权范围，由 Issue 指定的唯一操作者执行；仅此时移除 --dry-run。保留receipt、attempt ID、候选校验值与接收时间。正式提交、包上传和平台Skill公开分享均不是只读检查。
 
 ```sh
+# 完整attempt、scoringState与任务终态：
+playground status --attempt-id ATTEMPT_ID
+# 包与scorecard摘要补充；缺少完整状态字段不代表未评分：
 playground status --attempt-id ATTEMPT_ID --bundle
 # 仅在已创建attempt、Worker上传失败且核清可重试时：
 playground submit --challenge-id CHALLENGE_ID --attempt-id ATTEMPT_ID --bundle candidate.zip --trace OWN_NATIVE_TRACE
 ```
 
 按实际帮助核重试参数，不盲目创建重复attempt。queued/running/scoring不是终态；本地通过、已接收、任务分、轨迹审核和最终分开报告。原始回执留受控目录，公开Issue仅回填可公开摘要。
+
+维护者已授权的正常闭环是：独立验证有效候选 → 提交并核接收 → 查看实际反馈 → 有实质修复和验证后再提交。不要重复征求已有提交授权；不要因排队占位零分、独立generated_skill接口401或同版等待而另建attempt。维护者转述平台限制恶意高频提交，本项目据此禁止同版刷交、绕过限流；不编造统一冷却时间，遵守实际429/冷却提示。最高已接受版本与最新工程版本分别保留。
 
 ## 5. 常见卡点直接这样处理
 
@@ -83,5 +88,7 @@ playground submit --challenge-id CHALLENGE_ID --attempt-id ATTEMPT_ID --bundle c
 | 本地对但低分 | 单位、顺序、边界、缺失分项、真实计算及独立验证；不读隐藏评测 |
 | 轨迹解析/包审计失败 | 查看原生格式、包manifest和审计脚本兼容性；保留原件，不补造轨迹 |
 | 上传报错/长期评分中 | 保存已有attempt和响应，查询原attempt，核错误层次再重试 |
+| status摘要缺字段/独立Skill接口401 | 不带--bundle读取完整attempt；任务终态与generated_skill结果分开核，不能由后者推断提交失败 |
+| 题面自动计分但元数据仅人工评审 | 保存差异和实际回执，按真实评分状态报告；不保证即时分、不为等分重复上传 |
 
 成员把复现步骤、环境/版本、错误、已排除项及下一检查回填原 Issue；跨题有用的经验链接到 [EXPERIENCES.md](EXPERIENCES.md)。总监自行读取，不让维护者重新搭对话或转述技术报告。

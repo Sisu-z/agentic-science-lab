@@ -1,12 +1,18 @@
 # 共享经验索引
 
-这里存可复用经验的索引，不存第二套任务状态。成员开工先查本页，再读取来源 Issue/文档及证据边界。当前没有已完成且获平台终态验证的本届解题方法，不以准备检查冒充成功经验。
+这里存可复用经验的索引，不存第二套任务状态。成员开工先查本页，再读取来源 Issue/文档及证据边界。以下只记录有实际证据的方法与限制，不将平台操作成功推广为新题正确性或隐藏性能保证。
 
 | 主题 | 已知结论与适用边界 | 来源 |
 | --- | --- | --- |
 | 账号归属与个人材料 | 现有 Agent 归属已确认；独立身份材料题与 claim 分开核，查询缺失不能推出账号未绑定 | [#3](https://github.com/Sisu-z/agentic-science-lab/issues/3)、[规则](RULES.md) |
-| Codex 原生记录打包 | 本机 Playground 0.1.40 小样本预检需显式给 trace 与 raw-messages 并核包；不证明完整正式单题上传或评分通过，不自动合并不同对话记录 | [#3](https://github.com/Sisu-z/agentic-science-lab/issues/3)、[交付规程](RUNBOOK.md) |
+| Codex 原生记录打包 | Playground 0.1.40 显式给 trace 与 raw-messages、真实模型/harness并核包，已由本届完整上传与正式终态验证；不同对话原生记录仍不会自动合并，每道新题单独审计 | [#10](https://github.com/Sisu-z/agentic-science-lab/issues/10)、[#11](https://github.com/Sisu-z/agentic-science-lab/issues/11)、[交付规程](RUNBOOK.md) |
 | 有效文件与重放 | 必须按本题准确输出合同，从干净目录重放；开发目录存在输出、格式合法或旧题验证通过均不能代替本题正确性 | [交付规程](RUNBOOK.md)、[#5](https://github.com/Sisu-z/agentic-science-lab/issues/5) |
+| 完整评分状态 | status不带--bundle读取完整attempt与scoringState，带该选项主要补包摘要；generated_skill独立401不等于任务失败。已由有效终态对照核查 | [#10](https://github.com/Sisu-z/agentic-science-lab/issues/10)、[#13](https://github.com/Sisu-z/agentic-science-lab/issues/13)、[平台手册](PLATFORM.md) |
+| 独立合同验证 | 针对独立错误分支、边界及输入变体验证，再做准确包内重放；通过样本与自检不足以代替完整合同。原题已获有效终态，具体实现不公开复用 | [#11](https://github.com/Sisu-z/agentic-science-lab/issues/11) |
+| 输出与轨迹因果链 | 原生记录应实际覆盖生成命令、输入输出身份及验证，不仅保留事后文件名和进度说明；原始失败与调用结果配对保留，不补造历史 | [#13](https://github.com/Sisu-z/agentic-science-lab/issues/13) |
+| 正常提交与未知结果 | 先核已创建attempt、包哈希和接收再决定重试；排队占位零分不重交，按实质反馈修复，遵守实际限流。已用真实接收回执核查，后续终态只读原Issue | [#15](https://github.com/Sisu-z/agentic-science-lab/issues/15)、[#16](https://github.com/Sisu-z/agentic-science-lab/issues/16)、[#17](https://github.com/Sisu-z/agentic-science-lab/issues/17) |
+| 同分停滞与最佳版本 | 连续同分时先从原始模板/合同独立核实高权重要求；没有新差异证据不继续微调刷交。最新工程候选不自动取代最高正式版本 | [#14](https://github.com/Sisu-z/agentic-science-lab/issues/14) |
+| 优化累计预算 | 题定计算预算采用一次累计账本，实际尝试、失败和后续搜索计入，不因重启/反馈另获预算；验证与搜索边界按准确合同记录 | [#16](https://github.com/Sisu-z/agentic-science-lab/issues/16) |
 
 ## 成员怎样贡献
 
