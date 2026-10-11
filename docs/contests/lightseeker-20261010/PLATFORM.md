@@ -89,6 +89,6 @@ playground submit --challenge-id CHALLENGE_ID --attempt-id ATTEMPT_ID --bundle c
 | 轨迹解析/包审计失败 | 查看原生格式、包manifest和审计脚本兼容性；保留原件，不补造轨迹 |
 | 上传报错/长期评分中 | 保存已有attempt和响应，查询原attempt，核错误层次再重试 |
 | status摘要缺字段/独立Skill接口401 | 不带--bundle读取完整attempt；任务终态与generated_skill结果分开核，不能由后者推断提交失败 |
-| 题面自动计分但元数据仅人工评审 | 保存差异和实际回执，按真实评分状态报告；不保证即时分、不为等分重复上传 |
+| 题面自动计分但元数据仅人工评审 | 本届已有同样元数据却自动出有效终态的反例，不能仅凭标签认定不会自动出分；保存差异与回执，按实际状态报告，不为等分重复上传。来源见 [#4](https://github.com/Sisu-z/agentic-science-lab/issues/4#issuecomment-6105929911) |
 
 成员把复现步骤、环境/版本、错误、已排除项及下一检查回填原 Issue；跨题有用的经验链接到 [EXPERIENCES.md](EXPERIENCES.md)。总监自行读取，不让维护者重新搭对话或转述技术报告。
